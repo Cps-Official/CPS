@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/badge/version-2.0.0-orange)](https://github.com/markzambrem/cpps-native)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
 
-**CP+*** là ngôn ngữ lập trình hoàn toàn mới, được thiết kế bởi **Mark Zambrem** với triết lý kết hợp sức mạnh của C++, sự thanh lịch của Python, và những ý tưởng hiện đại từ Rust, Go và Swift. Đây không phải bản sao của bất kỳ ngôn ngữ nào — CP+* có cú pháp, hệ thống kiểu và mô hình thực thi độc đáo của riêng mình.
+**CP+*** là ngôn ngữ lập trình hoàn toàn mới, được thiết kế bởi **Cps-Official** với triết lý kết hợp sức mạnh của C++, sự thanh lịch của Python, và những ý tưởng hiện đại từ Rust, Go và Swift. Đây không phải bản sao của bất kỳ ngôn ngữ nào — CP+* có cú pháp, hệ thống kiểu và mô hình thực thi độc đáo của riêng mình.
 
 ---
 
@@ -46,8 +46,8 @@
 ## 📦 Cài đặt
 
 ```bash
-git clone https://github.com/markzambrem/cpps-native.git
-cd cpps-native
+git clone https://github.com/Cps-Official/CPS.git
+cd CPS
 ```
 
 Yêu cầu: Python 3.8+
@@ -405,12 +405,12 @@ Current boundaries are explicit rather than silently advertised as complete:
 
 📄 Giấy phép
 
-MIT License © 2025 Mark Zambrem
+MIT License © 2026 Cps-Official
 
 ---
 
 🌟 Tác giả
 
-Mark Zambrem — Creator & Lead Developer
+Cps-Official — Creator & Lead Developer
 ---
-Built with ❤️ and Python
+Built with ❤️ and Python-CPS
