@@ -1,0 +1,9 @@
+try ** {
+    ~> io::println("before")
+    !! "boom"
+    ~> io::println("after")
+} catch (e) ** {
+    ~> io::println("caught: {}", e)
+} finally ** {
+    ~> io::println("cleanup")
+}

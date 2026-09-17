@@ -1,0 +1,4 @@
+own<int> a := 100
+share<string> b := "shared"
+borrow<int> c := a
+~> io::println("{} {} {}", a, b, c)

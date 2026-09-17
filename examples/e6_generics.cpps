@@ -1,0 +1,21 @@
+++ identity<T> <~ (x: T) -> T ** {
+    <- x
+}
+
+class Stack<T> -> {
+    data :: mut List<T> = []
+
+    ++ push <~ (item: T) -> void ** {
+        @.data:push(item)
+    }
+
+    ++ pop <~ () -> T ** {
+        <- @.data:pop()
+    }
+}
+
+s := Stack<int>::new()
+s:push(1)
+s:push(2)
+value := s:pop()
+~> io::println("popped: {}", value)

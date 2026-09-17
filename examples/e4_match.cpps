@@ -1,0 +1,7 @@
+value := 42
+?~ value {
+    0 => { ~> io::println("zero") },
+    1 | 2 | 3 => { ~> io::println("small: {}", value) },
+    x if x > 100 => { ~> io::println("large: {}", x) },
+    _ => { ~> io::println("other: {}", value) }
+}

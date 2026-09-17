@@ -1,0 +1,6 @@
+++ main <~ () -> int ** {
+    name := "CP+*"
+    ~> io::println("Hello, {}!", name)
+    <- 0
+}
+main()

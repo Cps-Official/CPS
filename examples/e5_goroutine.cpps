@@ -1,0 +1,15 @@
+-- Goroutines + channels + `loop { }` + range for-loops.
+ch := Channel(10)
+
+go ** {
+    <> i :: 0..5 ** {
+        ch:send(i)
+    }
+    ch:close()
+}
+
+loop {
+    value := ch:recv()
+    ?? value is none ** { !> }
+    ~> io::println("Received: {}", value)
+}

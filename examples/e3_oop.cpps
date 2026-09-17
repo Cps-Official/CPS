@@ -1,0 +1,30 @@
+class Animal -> {
+    name :: mut string = ""
+    age :: mut int = 0
+
+    ++ new <~ (n: string, a: int) ** {
+        @.name = n
+        @.age = a
+    }
+
+    ++ speak <~ () -> void ** {
+        ~> io::println("{} says: ...", @.name)
+    }
+}
+
+class Dog : Animal -> {
+    breed :: string = "Mixed"
+
+    ++ new <~ (n: string, a: int, b: string) ** {
+        super::new(n, a)
+        @.breed = b
+    }
+
+    @@override
+    ++ speak <~ () -> void ** {
+        ~> io::println("{} says: Woof!", @.name)
+    }
+}
+
+dog := Dog::new("Rex", 3, "German Shepherd")
+dog:speak()
